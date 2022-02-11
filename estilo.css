@@ -1,0 +1,731 @@
+html {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+@media (max-width:600px){
+  
+  .nav {
+    margin: 0px;
+    background: white;
+    height: 70px;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+  }
+  
+  .nav__item__a {
+    color: black;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 0 20px;
+    display: inline-block;
+  }
+  
+  .seccionUno {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.527), rgb(255, 255, 255)),
+      url("https://s36496.pcdn.co/wp-content/uploads/2018/07/consejos-para-reuniones-productivas-trabajo.png");
+  }
+  
+  .seccionDos {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(white, rgba(0, 0, 255, 0.39), white),
+      url("https://actualidadlaboral.com/wp-content/uploads/2020/01/teletrabajo-1024x576.jpg");
+  }
+  
+  .seccionTres {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(white, rgba(0, 0, 255, 0.418), white),
+      url("https://static.vecteezy.com/system/resources/previews/002/075/548/non_2x/person-using-a-laptop-to-study-on-work-desk-free-photo.jpg");
+  }
+  
+  section {
+    height: 100vh;
+    padding-top: 0.1px;
+  }
+  
+  .seccionUno h1 {
+    font-size: 100px;
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin-top: calc(50vh - 100px);
+  }
+  
+  .seccionUno h6 {
+    width: 500px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: lighter;
+    font-size: 15px;
+  }
+  
+  .seccionDos h1,
+  .seccionTres h1 {
+    font-size: 40px;
+    width: fit-content;
+    height: 100px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin-top: calc(50vh - 100px);
+  }
+  
+  .seccionCuatro {
+    margin: 0 calc(50vw - 100px);
+    margin-top: 20px;
+  }
+  
+
+  button {
+    display: block;
+    width: fit-content;
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(rgb(12, 12, 88), rgb(74, 7, 161));
+    font-family: "Montserrat";
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+  
+  button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer {
+    display: none;
+   
+  }
+  
+ 
+  
+  /* CATA */
+  
+  .servSlideUno {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.527), rgb(255, 255, 255)),
+      url("https://franquiciasdemexico.org.mx/wp-content/uploads/2019/12/7.2-Quieres-que-tu-negocio-crezca.-Debes-aprender-a-delegar.jpg");
+  }
+  
+  .servSlideDos {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(white, rgba(0, 0, 255, 0.39), white),
+      url("http://www.equiposytalento.com/upload/talent_noticias/002/2765/diversidadgeneracional.jpg");
+  }
+  
+  .servSlideTres {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(white, rgba(0, 0, 255, 0.418), white),
+      url("https://www.gavacapital.com/wp-content/uploads/2019/01/shutterstock_32578711-1-1.jpg");
+  }
+  
+  .servSlideCuatro {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(white, rgba(0, 0, 255, 0.418), white),
+      url("https://wp-growpro.s3-eu-west-1.amazonaws.com/media/2016/05/arquitecto-en-australia.jpg");
+  }
+  
+  .servSlide h6 {
+    width: 500px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: lighter;
+    font-size: 15px;
+  }
+  
+  .servSlide h1 {
+    font-size: 60px;
+    width: fit-content;
+    height: 100px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin-top: calc(50vh - 100px);
+  }
+  
+  /* nosotros */
+  
+  .proyectos {
+    background-color: white;
+    margin-top: 70px;
+  }
+  
+  .proyectos h2 {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(5, 5, 37);
+  }
+  
+  
+  .results {
+    max-width: 980px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, 180px);
+    grid-auto-rows: minmax(20px, auto);
+    justify-content: center;	
+    background-color: white;
+   }
+   
+   
+   @supports (display: grid) {
+    .results > * {
+      margin: 0 auto;
+    }
+   }
+   
+   .results > * {
+    background-color: #ddd;
+   }
+   .results > * img {
+    max-width: 100%;
+   }
+   .results > * span {
+    font-size: 125%;
+    color: #cc3333;
+    font-family: 'Ultra';
+   }
+  
+  
+  /* faqs */
+  
+  .seccionFaqs {
+    margin-top: 70px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .busqueda {
+    width: 80vw;
+    height: fit-content;
+    margin: 0 auto;
+  }
+  
+  .seccionFaqs h5 {
+    margin: 0px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+  }
+  
+  .seccionFaqs h6 {
+    margin: 0px;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(253, 253, 253);
+    margin-bottom: 10px;
+  }
+  
+  .pregunta {
+    padding: 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(rgb(0, 0, 95), rgb(47, 5, 145));
+    width: 70vw;
+    margin: 0 auto;
+  }
+  
+  .pregunta1 {
+    margin-top: 30px;
+  }
+  
+  .seccionFaqs h2 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(5, 5, 37);
+  }
+  
+  .busqueda input {
+    display: inline-block;
+    width: 80vw;
+    height: 40px;
+    margin: 0 auto;
+    border: none;
+    padding: 7px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    background-color: rgba(0, 0, 255, 0.137);
+  }
+  
+  .busqueda input:focus {
+    background-color: linear-gradient(
+      rgba(0, 0, 95, 0.247),
+      rgba(47, 5, 145, 0.356)
+    );
+    color: black;
+    border: none;
+  }
+  
+  .busqueda a {
+    text-decoration: none;
+    color: rgb(10, 0, 68);
+    font-size: 12px;
+    margin-left: 20px;
+  }
+  
+  /* contacto */
+  
+  .seccionContacto {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: white;
+  
+    background-size: 100%;
+    color: white;
+  }
+  
+  .form {
+    box-shadow: 0 4px 8px 0 rgba(33, 9, 139, 0.2),
+      0 6px 20px 0 rgba(80, 106, 179, 0.19);
+    width: 400px;
+    background: linear-gradient(rgb(3, 3, 82), rgb(3, 2, 54));
+    margin: 70px auto;
+    padding: 30px 20px 40px;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  .form input {
+    width: 350px;
+    margin: 0 auto;
+    border: none;
+    height: 50px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .form .consulta {
+    height: 170px;
+  }
+  
+  .form .form__submit {
+    color: white;
+    font-family: "Montserrat";
+    background: linear-gradient(rgb(3, 3, 82), rgb(3, 1, 117));
+  }
+
+}
+@media (min-width: 600px) {
+
+
+  .nav {
+    margin: 0px;
+    background: white;
+    height: 70px;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+  }
+  
+  .nav__item__a {
+    color: black;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 0 20px;
+    display: inline-block;
+  }
+  
+  .seccionUno {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.527), rgb(255, 255, 255)),
+      url("https://s36496.pcdn.co/wp-content/uploads/2018/07/consejos-para-reuniones-productivas-trabajo.png");
+  }
+  
+  .seccionDos {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(white, rgba(0, 0, 255, 0.39), white),
+      url("https://actualidadlaboral.com/wp-content/uploads/2020/01/teletrabajo-1024x576.jpg");
+  }
+  
+  .seccionTres {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(white, rgba(0, 0, 255, 0.418), white),
+      url("https://static.vecteezy.com/system/resources/previews/002/075/548/non_2x/person-using-a-laptop-to-study-on-work-desk-free-photo.jpg");
+  }
+  
+  section {
+    height: 100vh;
+    padding-top: 0.1px;
+  }
+  
+  .seccionUno h1 {
+    font-size: 100px;
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin-top: calc(50vh - 100px);
+  }
+  
+  .seccionUno h6 {
+    width: 500px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: lighter;
+    font-size: 15px;
+  }
+  
+  .seccionDos h1,
+  .seccionTres h1 {
+    font-size: 60px;
+    width: fit-content;
+    height: 100px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin-top: calc(50vh - 100px);
+  }
+  
+  .seccionCuatro {
+    margin: 0 calc(50vw - 100px);
+    margin-top: 20px;
+  }
+  
+  .contacto div * {
+    display: inline-block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    font-weight: lighter;
+    font-size: 15px;
+  }
+  
+  .contacto,
+  .contacto div {
+    width: 300px;
+  }
+  
+  .contacto h5 {
+    font-weight: bolder;
+  }
+  
+  .contacto button {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  button {
+    display: block;
+    width: fit-content;
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(rgb(12, 12, 88), rgb(74, 7, 161));
+    font-family: "Montserrat";
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+  
+  button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer ul {
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  footer * {
+    align-items: center;
+    display: inline-block;
+    font-weight: lighter;
+  }
+  
+  footer {
+    position: static;
+    background-color: rgb(7, 0, 49);
+    padding-bottom: 10px;
+  }
+  
+  footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 7px;
+    padding: 0 10px;
+  }
+  
+  .input p {
+    color: white;
+    width: fit-content;
+    margin: 15px 20px;
+    display: inline-block;
+  }
+  
+  .input input {
+    display: inline-block;
+    width: 200px;
+    margin: 0 auto;
+    border: none;
+    padding: 7px;
+    border-radius: 10px;
+  }
+  
+  /* CATA */
+  
+  .servSlideUno {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.527), rgb(255, 255, 255)),
+      url("https://franquiciasdemexico.org.mx/wp-content/uploads/2019/12/7.2-Quieres-que-tu-negocio-crezca.-Debes-aprender-a-delegar.jpg");
+  }
+  
+  .servSlideDos {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(white, rgba(0, 0, 255, 0.39), white),
+      url("http://www.equiposytalento.com/upload/talent_noticias/002/2765/diversidadgeneracional.jpg");
+  }
+  
+  .servSlideTres {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(white, rgba(0, 0, 255, 0.418), white),
+      url("https://www.gavacapital.com/wp-content/uploads/2019/01/shutterstock_32578711-1-1.jpg");
+  }
+  
+  .servSlideCuatro {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(white, rgba(0, 0, 255, 0.418), white),
+      url("https://wp-growpro.s3-eu-west-1.amazonaws.com/media/2016/05/arquitecto-en-australia.jpg");
+  }
+  
+  .servSlide h6 {
+    width: 500px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: lighter;
+    font-size: 15px;
+  }
+  
+  .servSlide h1 {
+    font-size: 60px;
+    width: fit-content;
+    height: 100px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin-top: calc(50vh - 100px);
+  }
+  
+  /* nosotros */
+  
+  .proyectos {
+    background-color: white;
+    margin-top: 70px;
+  }
+  
+  .proyectos h2 {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(5, 5, 37);
+  }
+  
+  
+  .results {
+    max-width: 980px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, 180px);
+    grid-auto-rows: minmax(20px, auto);
+    justify-content: center;	
+    background-color: white;
+   }
+   
+   
+   @supports (display: grid) {
+    .results > * {
+      margin: 0 auto;
+    }
+   }
+   
+   .results > * {
+    background-color: #ddd;
+   }
+   .results > * img {
+    max-width: 100%;
+   }
+   .results > * span {
+    font-size: 125%;
+    color: #cc3333;
+    font-family: 'Ultra';
+   }
+  
+  
+  /* faqs */
+  
+  .seccionFaqs {
+    margin-top: 70px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .busqueda {
+    width: 900px;
+    height: fit-content;
+    margin: 0 auto;
+  }
+  
+  .seccionFaqs h5 {
+    margin: 0px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+  }
+  
+  .seccionFaqs h6 {
+    margin: 0px;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(253, 253, 253);
+    margin-bottom: 10px;
+  }
+  
+  .pregunta {
+    padding: 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(rgb(0, 0, 95), rgb(47, 5, 145));
+    width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .pregunta1 {
+    margin-top: 50px;
+  }
+  
+  .seccionFaqs h2 {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(5, 5, 37);
+  }
+  
+  .busqueda input {
+    display: inline-block;
+    width: 900px;
+    height: 40px;
+    margin: 0 auto;
+    border: none;
+    padding: 7px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    background-color: rgba(0, 0, 255, 0.137);
+  }
+  
+  .busqueda input:focus {
+    background-color: linear-gradient(
+      rgba(0, 0, 95, 0.247),
+      rgba(47, 5, 145, 0.356)
+    );
+    color: black;
+    border: none;
+  }
+  
+  .busqueda a {
+    text-decoration: none;
+    color: rgb(10, 0, 68);
+    font-size: 12px;
+    margin-left: 20px;
+  }
+  
+  /* contacto */
+  
+  .seccionContacto {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: white;
+  
+    background-size: 100%;
+    color: white;
+  }
+  
+  .form {
+    box-shadow: 0 4px 8px 0 rgba(33, 9, 139, 0.2),
+      0 6px 20px 0 rgba(80, 106, 179, 0.19);
+    width: 400px;
+    background: linear-gradient(rgb(3, 3, 82), rgb(3, 2, 54));
+    margin: 70px auto;
+    padding: 30px 20px 40px;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  .form input {
+    width: 350px;
+    margin: 0 auto;
+    border: none;
+    height: 50px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .form .consulta {
+    height: 170px;
+  }
+  
+  .form .form__submit {
+    color: white;
+    font-family: "Montserrat";
+    background: linear-gradient(rgb(3, 3, 82), rgb(3, 1, 117));
+  }
+}  
+  
+  
