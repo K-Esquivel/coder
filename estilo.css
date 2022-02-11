@@ -462,6 +462,14 @@ html {
     margin: 0 auto;
   }
   
+
+  button:hover,
+  button:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 83, 0.507);
+    transform: translateY(-0.25em);
+  }
+
+  
   button a {
     text-decoration: none;
     color: white;
