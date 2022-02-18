@@ -1,99 +1,27 @@
-html {
-  font-size: 62.5%;
+.text-xl-center{
+  font-size: 50px;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
+.row{
+  
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+.col-sm-4{
+  background-color: wheat;
+  height: 300px;
 }
 
-
-header nav .flexMenu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  list-style: none;
-  justify-content: space-evenly;
-  padding: 20px;
-  font-size: 2rem;
+.col-sm-8{
+  background-color: antiquewhite;
+  height: 300px;
 }
 
-.flexMenu li a {
-  text-decoration: none;
-  color: black;
+.row2{
+  background-color: blanchedalmond;
+  height: 300px;
 }
 
-header h1 {
-  color: black;
-  font-size: 2.5rem;
-  text-align: center;
-  padding: 20px;
-}
-
-.grid-container {
-  display: grid;
-  margin: 40px 0 40px 0;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(3, 200px);
-  gap: 1px 1px;
-  text-align: center;
-  justify-content: stretch;
-  font-size: 2rem;
-  grid-template-areas:
-    "bannerUno bannerUno bannerUno bannerUno"
-    "opinionDos opinionDos opinionTres opinionCuatro"
-    "opinionCinco opinionSeis opinionSiete opinionCuatro";
-}
-
-.bannerUno {
-  grid-area: bannerUno;
-  background-color: pink;
-}
-
-.opinionTres {
-  grid-area: opinionTres;
-  background-color: rgb(182, 21, 48);
-}
-
-.opinionDos {
-  grid-area: opinionDos;
-  background-color: rgb(211, 116, 132);
-}
-
-.opinionCuatro {
-  grid-area: opinionCuatro;
-  background-color: rgb(173, 136, 142);
-}
-
-.opinionCinco {
-  grid-area: opinionCinco;
-  background-color: rgb(206, 65, 88);
-}
-
-.opinionSeis {
-  grid-area: opinionSeis;
-  background-color: pink;
-}
-
-.opinionSiete {
-  grid-area: opinionSiete;
-  background-color: rgb(184, 79, 97);
-}
-
-/* Footer */
-footer {
-  background-color: #e1eef7;
-  width: 100%;
-  height: 100px;
-  padding: 50px 0 0 0;
-}
-
-footer h5 {
-  font-size: 2rem;
-  font-weight: 900;
-  text-align: center;
+.row .footer{
+  background-color: aquamarine;
+  height: 150px;
 }
