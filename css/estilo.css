@@ -1,0 +1,96 @@
+.carousel {
+  position: relative; }
+  .carousel .backgroundItem {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#343a40, rgba(0, 0, 0, 0), #343a40);
+    position: absolute;
+    z-index: 999; }
+  .carousel .cartelCarousel {
+    position: absolute;
+    bottom: 30%;
+    z-index: 1000;
+    align-items: center;
+    left: 20%; }
+    .carousel .cartelCarousel .cartelCarousel__boton {
+      border: none;
+      background-color: #343a40;
+      color: aliceblue;
+      padding: 1% 2%;
+      border-radius: 8px;
+      box-shadow: 2px 2px 30px #838383; }
+    .carousel .cartelCarousel .cartelCarousel__texto {
+      color: aliceblue;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem; }
+
+.navbar-brand {
+  font-family: serif; }
+
+.nav-link {
+  color: aliceblue; }
+
+.botonSecundario {
+  background-color: aliceblue;
+  color: #343a40;
+  border-radius: 12px;
+  margin-left: 33%; }
+
+.card-title {
+  color: aliceblue; }
+
+.card-body {
+  background-color: #343a40;
+  margin: 0px; }
+  .card-body .col img {
+    width: 30px;
+    border-radius: 100%; }
+  .card-body .col a {
+    color: aliceblue;
+    padding-left: 5%; }
+
+form {
+  padding: 2em; }
+
+button:hover {
+  background-color: #181b1f;
+  color: aliceblue; }
+
+@media (max-width: 400px) {
+  .cartelCarousel__boton {
+    font-size: 80%; }
+  .col a {
+    display: none; }
+  .botonSecundario {
+    margin-left: 34%; } }
+
+@media (min-width: 401px) {
+  .col a {
+    font-size: 12px; }
+  .botonSecundario {
+    padding: 0.1% 1.4%;
+    margin-left: 43%; }
+  .background {
+    width: 100vw;
+    background-image: url("https://cdn0.bodas.net/vendor/79218/3_2/960/jpg/postbodayasoc-1-5_1_79218.jpeg");
+    background-size: cover; }
+  form {
+    width: 60%;
+    margin: auto;
+    background-color: #15171aa6;
+    color: aliceblue; } }
+
+@media (min-width: 768px) {
+  .botonSecundario {
+    padding: 0.1% 1.4%;
+    margin-left: 45%; }
+  .background {
+    width: 100vw;
+    background-image: url("http://www.serendipity-fotografia.com/wp-content/uploads/2015/03/BodaRoci%CC%81oDani-264.jpg");
+    background-size: cover; }
+  form {
+    width: 46vw;
+    margin-right: 40vw;
+    margin-left: 5vw;
+    color: aliceblue; } }
