@@ -31,7 +31,7 @@
   background-color: #343a40;
   color: aliceblue;
   padding: 1% 2%;
-  border-radius: 12%;
+  border-radius: 8px;
   box-shadow: 2px 2px 30px rgb(131, 131, 131);
 }
 
@@ -72,7 +72,8 @@ form{
 
 
 button:hover{
-  color: #181b1f;
+  background-color: #181b1f;
+  color: aliceblue;
 }
 
 @media (max-width: 400px) {
