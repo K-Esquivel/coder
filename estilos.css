@@ -70,6 +70,11 @@ form{
   padding: 2em;
 }
 
+
+button:hover{
+  color: #181b1f;
+}
+
 @media (max-width: 400px) {
   .cartelCarousel__boton {
     font-size: 80%;
@@ -84,9 +89,6 @@ form{
 }
 
 @media (min-width: 401px) {
-  .cartelCarousel__texto {
-    display: none;
-  }
 
   .col > a {
     font-size: 12px;
@@ -131,5 +133,7 @@ form{
   color: aliceblue;
 
 }
+
+
 
 }
