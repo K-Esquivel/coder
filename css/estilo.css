@@ -1,96 +1,303 @@
 .carousel {
-  position: relative; }
-  .carousel .backgroundItem {
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(#343a40, rgba(0, 0, 0, 0), #343a40);
-    position: absolute;
-    z-index: 999; }
-  .carousel .cartelCarousel {
-    position: absolute;
-    bottom: 30%;
-    z-index: 1000;
-    align-items: center;
-    left: 20%; }
-    .carousel .cartelCarousel .cartelCarousel__boton {
-      border: none;
-      background-color: #343a40;
-      color: aliceblue;
-      padding: 1% 2%;
-      border-radius: 8px;
-      box-shadow: 2px 2px 30px #838383; }
-    .carousel .cartelCarousel .cartelCarousel__texto {
-      color: aliceblue;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 0.05rem; }
+  position: relative;
+}
+
+.carousel .backgroundItem {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#343a40), color-stop(rgba(0, 0, 0, 0)), to(#343a40));
+  background-image: linear-gradient(#343a40, rgba(0, 0, 0, 0), #343a40);
+  position: absolute;
+  z-index: 999;
+}
+
+.carousel .cartelCarousel {
+  position: absolute;
+  bottom: 30%;
+  z-index: 1000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 20%;
+}
+
+.carousel .cartelCarousel .cartelCarousel__boton {
+  border: none;
+  background-color: #343a40;
+  color: aliceblue;
+  padding: 1% 2%;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 2px 30px #838383;
+          box-shadow: 2px 2px 30px #838383;
+}
+
+.carousel .cartelCarousel .cartelCarousel__texto {
+  color: aliceblue;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
 
 .navbar-brand {
-  font-family: serif; }
+  font-family: serif;
+}
 
 .nav-link {
-  color: aliceblue; }
+  color: aliceblue;
+}
 
 .botonSecundario {
   background-color: aliceblue;
   color: #343a40;
   border-radius: 12px;
-  margin-left: 33%; }
+  margin-left: 33%;
+}
 
 .card-title {
-  color: aliceblue; }
+  color: aliceblue;
+}
 
 .card-body {
   background-color: #343a40;
-  margin: 0px; }
-  .card-body .col img {
-    width: 30px;
-    border-radius: 100%; }
-  .card-body .col a {
-    color: aliceblue;
-    padding-left: 5%; }
+  margin: 0px;
+}
+
+.card-body .col img {
+  width: 30px;
+  border-radius: 100%;
+}
+
+.card-body .col a {
+  color: aliceblue;
+  padding-left: 5%;
+}
 
 form {
-  padding: 2em; }
+  padding: 2em;
+}
 
 button:hover {
   background-color: #181b1f;
-  color: aliceblue; }
+  color: aliceblue;
+}
+
+h3 {
+  text-align: center;
+  margin: 2em;
+}
+
+main {
+  width: 90%;
+  min-height: 96vh;
+  margin: 2vh auto;
+}
+
+.galeria {
+  max-width: 100%;
+  line-height: 0;
+  padding: 4px;
+  padding-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.item {
+  padding: 4px;
+  width: 300px;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.7;
+  outline: 3px solid #fff;
+}
+
+.item img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+}
+
+.modal:target {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.imagen {
+  margin: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.imagen a {
+  margin: 0 4px;
+}
+
+.imagen img {
+  max-width: 100%;
+  width: 80vw;
+  height: auto;
+  -webkit-animation: zoom 0.5s ease-in-out;
+          animation: zoom 0.5s ease-in-out;
+  position: relative;
+}
+
+.imagen a:nth-child(2)::after {
+  content: "X";
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 1.5em;
+  background: rgba(0, 0, 0, 0.425);
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  z-index: 1;
+}
+
+.imagen a:nth-child(2) {
+  margin: 0;
+  height: 100%;
+}
+
+.ant,
+.sig {
+  width: 0px;
+  height: 0px;
+  border: 20px solid transparent;
+}
+
+.ant {
+  border-right: 20px solid rgba(255, 255, 255, 0.8);
+}
+
+.sig {
+  border-left: 20px solid rgba(255, 255, 255, 0.8);
+}
+
+.ant:hover {
+  border-right: 20px solid rgba(255, 0, 0, 0.8);
+}
+
+.sig:hover {
+  border-left: 20px solid rgba(255, 0, 0, 0.8);
+}
+
+.card-container .card-deck {
+  margin: 10px auto;
+}
+
+.background-carousel {
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(#f06b0600));
+  background-image: linear-gradient(to top, black, #f06b0600);
+  position: absolute;
+}
 
 @media (max-width: 400px) {
   .cartelCarousel__boton {
-    font-size: 80%; }
+    font-size: 80%;
+  }
   .col a {
-    display: none; }
+    display: none;
+  }
   .botonSecundario {
-    margin-left: 34%; } }
+    margin-left: 34%;
+  }
+  .item {
+    width: 95vw;
+  }
+}
 
 @media (min-width: 401px) {
   .col a {
-    font-size: 12px; }
+    font-size: 12px;
+  }
   .botonSecundario {
     padding: 0.1% 1.4%;
-    margin-left: 43%; }
+    margin-left: 43%;
+  }
   .background {
     width: 100vw;
     background-image: url("https://cdn0.bodas.net/vendor/79218/3_2/960/jpg/postbodayasoc-1-5_1_79218.jpeg");
-    background-size: cover; }
+    background-size: cover;
+  }
   form {
     width: 60%;
     margin: auto;
     background-color: #15171aa6;
-    color: aliceblue; } }
+    color: aliceblue;
+  }
+}
 
 @media (min-width: 768px) {
   .botonSecundario {
     padding: 0.1% 1.4%;
-    margin-left: 45%; }
+    margin-left: 45%;
+  }
   .background {
     width: 100vw;
     background-image: url("http://www.serendipity-fotografia.com/wp-content/uploads/2015/03/BodaRoci%CC%81oDani-264.jpg");
-    background-size: cover; }
+    background-size: cover;
+  }
   form {
     width: 46vw;
     margin-right: 40vw;
     margin-left: 5vw;
-    color: aliceblue; } }
+    color: aliceblue;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
