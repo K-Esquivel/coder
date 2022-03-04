@@ -1,7 +1,7 @@
 {
-  "name": "coder",
+  "name": "AresFotografia",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto de CoderHouse 2022, pagina web estatica sobre un servicio de fotografia",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

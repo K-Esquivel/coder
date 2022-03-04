@@ -1,2 +1,0 @@
-Agregue las keywords: "FOTOGRAFIA, FOTOGRAFOS, BODAS, CASAMIENTOS, EVENTOS" en todas las paginas, agregando otras que consideraba que aplicaban a la pagina como "portfolio".
-En el caso de los titulos los cambie a: "Ares fotografia - (seccion)" para que siga haciendo referencia a la marca, sin perder la ubicacion en la que se encuentra el usuario.
