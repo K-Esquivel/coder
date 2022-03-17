@@ -35,14 +35,7 @@ cero: 0px
     z-index: 1000;
     align-items: center;
     left: 20%;
-    .cartelCarousel__boton {
-      border: none;
-      background-color: $c-primario;
-      color: $c-secundario;
-      padding: 1% 2%;
-      border-radius: 8px;
-      box-shadow: 2px 2px 30px rgb(131, 131, 131);
-    }
+
 
     .cartelCarousel__texto {
       color: $c-secundario;
@@ -245,6 +238,7 @@ main {
 
 
   .background {
+
     width: 100vw;
     background-image: url("https://cdn0.bodas.net/vendor/79218/3_2/960/jpg/postbodayasoc-1-5_1_79218.jpeg");
     background-size: cover;
