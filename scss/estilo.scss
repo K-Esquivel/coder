@@ -23,9 +23,13 @@ cero: 0px
 .carousel {
   position: relative;
   .backgroundItem {
-    width: map-get($generales, cienPorciento);
-    height: map-get($generales, cienPorciento);
-    background-image: $gradient-primario;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      $c-primario,
+      rgba(0, 0, 0, 0),
+      $c-primario
+    );
     position: absolute;
     z-index: 999;
   }
@@ -36,9 +40,8 @@ cero: 0px
     align-items: center;
     left: 20%;
 
-
     .cartelCarousel__texto {
-      color: $c-secundario;
+      color: aliceblue;
       font-weight: 900;
       text-transform: uppercase;
       letter-spacing: 0.05rem;
@@ -51,36 +54,30 @@ cero: 0px
 }
 
 .nav-link {
-  color: $c-secundario;
+  color: aliceblue;
 }
 
 .botonSecundario {
-margin: 0 auto;
-  color: $c-primario;
-  border: none;
+  background-color: aliceblue;
+  color: #343a40;
   border-radius: 12px;
+  margin-left: 33%;
 }
-
-.btn--cancel{
-  @extend .botonSecundario;
-  background-color:hsla(0, 100%, 50%, 0.8);
-}
-
 .card-title {
-  color: $c-secundario;
+  color: aliceblue;
 }
 
 .card-body {
   background-color: $c-primario;
-  margin: map-get($generales, cero);
+  margin: 0px;
   .col {
     img {
       width: 30px;
-      border-radius: map-get($generales, cienPorciento);
+      border-radius: 100%;
     }
 
     a {
-      color: $c-secundario;
+      color: aliceblue;
       padding-left: 5%;
     }
   }
@@ -92,7 +89,7 @@ form {
 
 button:hover {
   background-color: #181b1f;
-  color: $c-secundario;
+  color: aliceblue;
 }
 
 h3 {
@@ -105,10 +102,10 @@ main {
   margin: 2vh auto;
 }
 .galeria {
-  max-width: map-get($generales, cienPorciento);
-  line-height: map-get($generales, cero);
+  max-width: 100%;
+  line-height: 0;
   padding: 4px;
-  padding-right: map-get($generales, cero);
+  padding-right: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -118,7 +115,7 @@ main {
   width: 300px;
 }
 .item img {
-  max-width: map-get($generales, cienPorciento);
+  max-width: 100%;
   height: auto;
   opacity: 0.7;
   outline: 3px solid #fff;
@@ -131,17 +128,18 @@ main {
   display: none;
 }
 .modal:target {
-  @include size(100vw, map-get($generales, cienPorciento));
   display: block;
   position: fixed;
-  top: map-get($generales, cero);
-  left: map-get($generales, cero);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
   display: flex;
   background-color: rgba(0, 0, 0, 0.6);
 }
 .imagen {
   margin: auto;
-  width: map-get($generales, cienPorciento);
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,14 +158,16 @@ main {
   margin: 0 4px;
 }
 .imagen img {
-  @include size(80vw, auto);
-  max-width: map-get($generales, cienPorciento);
+  max-width: 100%;
+  width: 80vw;
+  height: auto;
   animation: zoom 0.5s ease-in-out;
   position: relative;
 }
 .imagen a:nth-child(2)::after {
   content: "X";
-  @include size(40px, 40px);
+  width: 40px;
+  height: 40px;
   line-height: 36px;
   text-align: center;
   font-size: 1.5em;
@@ -179,13 +179,13 @@ main {
   z-index: 1;
 }
 .imagen a:nth-child(2) {
-  margin: map-get($generales, cero);
-  height: map-get($generales, cienPorciento);
+  margin: 0;
+  height: 100%;
 }
 .ant,
 .sig {
-  width: map-get($generales, cero);
-  height: map-get($generales, cero);
+  width: 0px;
+  height: 0px;
   border: 20px solid transparent;
 }
 .ant {
@@ -208,8 +208,8 @@ main {
 }
 
 .background-carousel {
-  height: map-get($generales, cienPorciento);
-  background-image: linear-gradient(to top, rgb(0, 0, 0), $c-transparent);
+  height: 100%;
+  background-image: linear-gradient(to top, rgb(0, 0, 0), #f06b0600);
   position: absolute;
 }
 
@@ -222,7 +222,9 @@ main {
       display: none;
     }
   }
-
+  .botonSecundario {
+    margin-left: 34%;
+  }
 
   .item {
     width: 95vw;
@@ -235,7 +237,10 @@ main {
       font-size: 12px;
     }
   }
-
+  .botonSecundario {
+    padding: 0.1% 1.4%;
+    margin-left: 43%;
+  }
 
   .background {
 
@@ -248,11 +253,15 @@ main {
     width: 60%;
     margin: auto;
     background-color: #15171aa6;
-    color: $c-secundario;
+    color: aliceblue;
   }
 }
 
 @media (min-width: 768px) {
+  .botonSecundario {
+    padding: 0.1% 1.4%;
+    margin-left: 45%;
+  }
 
   .background {
     width: 100vw;
@@ -264,6 +273,6 @@ main {
     width: 46vw;
     margin-right: 40vw;
     margin-left: 5vw;
-    color: $c-secundario;
+    color: aliceblue;
   }
 }
