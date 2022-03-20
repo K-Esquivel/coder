@@ -1,0 +1,524 @@
+$c-primario: #343a40;
+$c-secundario: rgb(240, 248, 255);
+$c-transparent: rgba(0, 0, 0, 0.425);
+$gradient-primario: linear-gradient($c-primario, $c-transparent, $c-primario);
+$c-transparent: rgba(240, 248, 255, 0);
+$c-cancel: rgb(143, 0, 0);
+$c-cancelSecondary: rgb(109, 0, 0);
+
+// map
+$generales: (
+  cienPorciento: 100%,
+  cero: 0px,
+);
+
+// mixin
+@mixin size($alto, $ancho) {
+  height: alto;
+  width: ancho;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: $c-primario;
+  &__social {
+    text-align: center;
+    padding-bottom: 25px;
+    a {
+      font-size: 24px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      margin: 0 8px;
+      color: inherit;
+      opacity: 0.75;
+    }
+    a:hover {
+      opacity: 0.9;
+    }
+  }
+  &__copyright {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+  }
+}
+
+.button {
+  border: none;
+  color: $c-secundario;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5em;
+  background: $c-primario;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #1a1a1a, -6px -6px 12px #333333;
+  &:active {
+    border: none;
+    color: #666;
+    box-shadow: inset 4px 4px 12px #1a1a1a, inset -4px -4px 12px #333333;
+  }
+  a,
+  a:hover,
+  a:target,
+  a:hover,
+  a::after {
+    text-decoration: none;
+    color: $c-secundario;
+  }
+}
+
+.buttonCancel {
+  @extend .button;
+  background-color: $c-cancel;
+  margin-left: 10px;
+  a {
+    color: $c-primario;
+  }
+  :hover {
+   a{
+    color: $c-cancelSecondary;
+  }}
+
+}
+
+.buttonSecondary {
+  @extend .button;
+  background-color: $c-secundario;
+  box-shadow: 6px 6px 12px #70707086, -6px -6px 12px #3b3b3b91;
+  a {
+    color: $c-primario;
+  }
+  :hover {
+   a{
+    color: $c-secundario;
+  }}
+}
+
+.buttonWhite{
+  @extend .button;
+    box-shadow: 6px 6px 12px #bdbdbd, -6px -6px 12px #c7c7c7;  
+
+}
+// .footer ul a {
+//   color:inherit;
+//   text-decoration:none;
+//   opacity:0.8;
+// }
+
+// .footer ul a:hover {
+//   opacity:1;
+// }
+
+
+
+.carousel {
+  position: relative;
+  .backgroundItem {
+    width: map-get($generales, cienPorciento);
+    height: map-get($generales, cienPorciento);
+    background-image: $gradient-primario;
+    position: absolute;
+    z-index: 999;
+  }
+  .cartelCarousel {
+    position: absolute;
+    bottom: 43%;
+    z-index: 1000;
+    align-items: center;
+    left: 20%;
+    .h3 {
+      color: $c-secundario;
+      letter-spacing: 0.05rem;
+    }
+  }
+}
+
+.navbar-brand {
+  font-family: serif;
+}
+
+.nav-link {
+  color: $c-secundario;
+}
+
+
+
+// .btn--cancel {
+//   @extend .botonSecundario;
+//   background-color: hsla(0, 100%, 50%, 0.8);
+// }
+
+.cardContainer{
+  .card{
+    border: none;
+    background-color: $c-primario;
+    border-radius: 0px;
+    .card-title {
+      color: $c-secundario;
+      padding-bottom: 2vh;
+    }
+      .buttonSecondary{
+        position: absolute;
+        width: 40vw;
+        right: 10%;
+      }    
+  }
+}
+
+.card-container{
+.card-body {
+  background-color: $c-primario;
+  margin: map-get($generales, cero);
+  h5, p{
+    color: $c-secundario;
+  }
+}}
+
+.h3{
+  margin: 0 auto;
+}
+
+form {
+  padding: 2em;
+  .button{
+    box-shadow: 6px 6px 12px #bdbdbd, -6px -6px 12px #c7c7c7;  
+}
+}
+
+button:hover {
+  background-color: #181b1f;
+  color: $c-secundario;
+}
+
+.portfolio {
+  width: 90%;
+  min-height: 96vh;
+  margin: 2vh auto;
+}
+
+.galeria {
+  max-width: map-get($generales, cienPorciento);
+  line-height: map-get($generales, cero);
+  padding: 4px;
+  padding-right: map-get($generales, cero);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.item {
+  padding: 4px;
+  width: 300px;
+}
+.item img {
+  max-width: map-get($generales, cienPorciento);
+  height: auto;
+  opacity: 0.7;
+  outline: 3px solid #fff;
+}
+.item img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.modal {
+  display: none;
+}
+.modal:target {
+  @include size(100vw, map-get($generales, cienPorciento));
+  display: block;
+  position: fixed;
+  top: map-get($generales, cero);
+  left: map-get($generales, cero);
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.imagen {
+  margin: auto;
+  width: map-get($generales, cienPorciento);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes zoom {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.imagen a {
+
+  margin: 0 4px;
+}
+.imagen img {
+  @include size(80vw, auto);
+  max-width: map-get($generales, cienPorciento);
+  animation: zoom 0.5s ease-in-out;
+  position: relative;
+}
+.imagen a:nth-child(2)::after {
+  content: "X";
+  @include size(40px, 40px);
+  line-height: 36px;
+  text-align: center;
+  font-size: 1.5em;
+  background: hsla(0, 0%, 0%, 0.425);
+  color: hsla(0, 0%, 100%, 0.5);
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  z-index: 1;
+}
+.imagen a:nth-child(2) {
+  margin: map-get($generales, cero);
+  height: map-get($generales, cienPorciento);
+}
+.ant,
+.sig {
+  width: map-get($generales, cero);
+  height: map-get($generales, cero);
+  border: 20px solid transparent;
+}
+.ant {
+  position: absolute;
+  z-index: 10000;
+  top: 45vh;
+  left: 1vw;
+  border-right: 20px solid hsla(0, 100%, 100%, 0.8);
+}
+.sig {
+  position: absolute;
+  z-index: 10000;
+  top: 45vh;
+  right: 1vw;
+  border-left: 20px solid hsla(0, 100%, 100%, 0.8);
+}
+.ant:hover {
+  border-right: 20px solid hsla(0, 100%, 50%, 0.8);
+}
+.sig:hover {
+  border-left: 20px solid hsla(0, 100%, 50%, 0.8);
+}
+
+.card-container {
+  .card-deck {
+    margin: 10px auto;
+  }
+}
+
+.background-carousel {
+  height: map-get($generales, cienPorciento);
+  background-image: linear-gradient(to top, rgb(0, 0, 0), $c-transparent);
+  position: absolute;
+}
+
+
+
+.cards__photographers{
+  .cardTitle{
+    margin: 20px 0px;
+  }
+  .row {
+    margin: 0 -5px;
+    }
+  }
+  
+  .column {
+    float: left;
+    width: 30vw;
+    margin: 0 auto;
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+      height: 400px;
+      position: relative;
+      &__subtitle{
+        font-weight: 500;
+        font-size: small;
+        margin-bottom: 20px;
+        margin-top: 0px;
+      }
+      &__subSection{
+        margin: 0;
+        position: absolute;
+        bottom: 10px;
+        width: 89%;
+        .card__social{
+          a{
+            font-size: 18px;
+            border: none;
+          }
+        }
+        .button{
+          width: 100%;
+        }
+        .card__dates{
+          font-size: x-small;
+        }
+      }
+    }}
+
+
+@media screen and (max-width: 496px) {
+  
+.card__description{
+  display: none;
+}
+.carousel{
+  .h3{
+display: none;
+  }
+  .button{
+    display:none;
+  }
+}
+.card__text{
+  font-size: 17px;
+}
+}
+
+@media screen and (max-width: 646px) {
+  .column {
+  
+  .card{
+    height: 100px;
+  position: relative;
+  &__name{
+    font-size: 25px;
+  }
+&__description{
+  font-size: small;
+}
+  &__subSection{
+    position: absolute;
+  }  
+}
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .column {
+    width: 70%;
+    display: block;
+    margin-bottom: 20px;
+  .card{
+    height: 300px;
+  position: relative;
+
+  &__subSection{
+    position: absolute;
+  }  
+}
+  }
+}
+
+@media (max-width: 400px) {
+
+
+ .carousel{
+   .h3{
+display: none;
+   }
+   .button{
+     display:none;
+   }
+ }
+
+ .cardContainer{
+  .card{
+    border: none;
+    .card-title {
+      color: $c-secundario;
+      padding-bottom: 1vh;
+    }
+      .buttonSecondary{
+        position: absolute;
+        width: 60vw;
+        right: 10%;
+      }
+    
+  }
+
+}
+
+  .col {
+    a {
+      display: none;
+    }
+  }
+
+  .item {
+    width: 95vw;
+  }
+
+  .footer__copyright{
+    display: none;
+  }
+
+
+}
+
+@media (min-width: 401px) {
+  .col {
+    a {
+      font-size: 12px;
+    }
+  }
+
+  .background {
+    width: 100vw;
+    background-image: url("https://cdn0.bodas.net/vendor/79218/3_2/960/jpg/postbodayasoc-1-5_1_79218.jpeg");
+    background-size: cover;
+  }
+
+  form {
+    width: 70%;
+    margin: auto;
+    background-color: #15171aa6;
+    color: $c-secundario;
+  }
+
+  form{
+    .button{
+      box-shadow: 6px 6px 12px #70707086, -6px -6px 12px #3b3b3b91;
+    }
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .background {
+    width: 100vw;
+    background-image: url("http://www.serendipity-fotografia.com/wp-content/uploads/2015/03/BodaRoci%CC%81oDani-264.jpg");
+    background-size: cover;
+  }
+
+  form {
+    width: 46vw;
+    margin-right: 40vw;
+    margin-left: 5vw;
+    color: $c-secundario;
+  }
+
+  form{
+    .button{
+      box-shadow: 6px 6px 12px #70707086, -6px -6px 12px #3b3b3b91;
+    }
+  }
+  
+
+  }
+

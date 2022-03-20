@@ -1,0 +1,526 @@
+.footer {
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: #343a40;
+}
+
+.footer__social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer__social a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer__social a:hover {
+  opacity: 0.9;
+}
+
+.footer__copyright {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+.button, .buttonCancel, .buttonSecondary, .buttonWhite {
+  border: none;
+  color: aliceblue;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5em;
+  background: #343a40;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 6px 6px 12px #1a1a1a, -6px -6px 12px #333333;
+          box-shadow: 6px 6px 12px #1a1a1a, -6px -6px 12px #333333;
+}
+
+.button:active, .buttonCancel:active, .buttonSecondary:active, .buttonWhite:active {
+  border: none;
+  color: #666;
+  -webkit-box-shadow: inset 4px 4px 12px #1a1a1a, inset -4px -4px 12px #333333;
+          box-shadow: inset 4px 4px 12px #1a1a1a, inset -4px -4px 12px #333333;
+}
+
+.button a, .buttonCancel a, .buttonSecondary a, .buttonWhite a,
+.button a:hover,
+.buttonCancel a:hover,
+.buttonSecondary a:hover,
+.buttonWhite a:hover,
+.button a:target,
+.buttonCancel a:target,
+.buttonSecondary a:target,
+.buttonWhite a:target,
+.button a:hover,
+.buttonCancel a:hover,
+.buttonSecondary a:hover,
+.buttonWhite a:hover,
+.button a::after,
+.buttonCancel a::after,
+.buttonSecondary a::after,
+.buttonWhite a::after {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.buttonCancel {
+  background-color: #8f0000;
+  margin-left: 10px;
+}
+
+.buttonCancel a {
+  color: #343a40;
+}
+
+.buttonCancel :hover a {
+  color: #6d0000;
+}
+
+.buttonSecondary {
+  background-color: aliceblue;
+  -webkit-box-shadow: 6px 6px 12px #70707086, -6px -6px 12px #3b3b3b91;
+          box-shadow: 6px 6px 12px #70707086, -6px -6px 12px #3b3b3b91;
+}
+
+.buttonSecondary a {
+  color: #343a40;
+}
+
+.buttonSecondary :hover a {
+  color: aliceblue;
+}
+
+.buttonWhite {
+  -webkit-box-shadow: 6px 6px 12px #bdbdbd, -6px -6px 12px #c7c7c7;
+          box-shadow: 6px 6px 12px #bdbdbd, -6px -6px 12px #c7c7c7;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel .backgroundItem {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#343a40), color-stop(rgba(0, 0, 0, 0.425)), to(#343a40));
+  background-image: linear-gradient(#343a40, rgba(0, 0, 0, 0.425), #343a40);
+  position: absolute;
+  z-index: 999;
+}
+
+.carousel .cartelCarousel {
+  position: absolute;
+  bottom: 43%;
+  z-index: 1000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 20%;
+}
+
+.carousel .cartelCarousel .h3 {
+  color: aliceblue;
+  letter-spacing: 0.05rem;
+}
+
+.navbar-brand {
+  font-family: serif;
+}
+
+.nav-link {
+  color: aliceblue;
+}
+
+.cardContainer .card {
+  border: none;
+  background-color: #343a40;
+  border-radius: 0px;
+}
+
+.cardContainer .card .card-title {
+  color: aliceblue;
+  padding-bottom: 2vh;
+}
+
+.cardContainer .card .buttonSecondary {
+  position: absolute;
+  width: 40vw;
+  right: 10%;
+}
+
+.card-container .card-body {
+  background-color: #343a40;
+  margin: 0px;
+}
+
+.card-container .card-body h5, .card-container .card-body p {
+  color: aliceblue;
+}
+
+.h3 {
+  margin: 0 auto;
+}
+
+form {
+  padding: 2em;
+}
+
+form .button, form .buttonCancel, form .buttonSecondary, form .buttonWhite {
+  -webkit-box-shadow: 6px 6px 12px #bdbdbd, -6px -6px 12px #c7c7c7;
+          box-shadow: 6px 6px 12px #bdbdbd, -6px -6px 12px #c7c7c7;
+}
+
+button:hover {
+  background-color: #181b1f;
+  color: aliceblue;
+}
+
+.portfolio {
+  width: 90%;
+  min-height: 96vh;
+  margin: 2vh auto;
+}
+
+.galeria {
+  max-width: 100%;
+  line-height: 0px;
+  padding: 4px;
+  padding-right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.item {
+  padding: 4px;
+  width: 300px;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.7;
+  outline: 3px solid #fff;
+}
+
+.item img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+}
+
+.modal:target {
+  height: alto;
+  width: ancho;
+  display: block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.imagen {
+  margin: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.imagen a {
+  margin: 0 4px;
+}
+
+.imagen img {
+  height: alto;
+  width: ancho;
+  max-width: 100%;
+  -webkit-animation: zoom 0.5s ease-in-out;
+          animation: zoom 0.5s ease-in-out;
+  position: relative;
+}
+
+.imagen a:nth-child(2)::after {
+  content: "X";
+  height: alto;
+  width: ancho;
+  line-height: 36px;
+  text-align: center;
+  font-size: 1.5em;
+  background: rgba(0, 0, 0, 0.425);
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  z-index: 1;
+}
+
+.imagen a:nth-child(2) {
+  margin: 0px;
+  height: 100%;
+}
+
+.ant,
+.sig {
+  width: 0px;
+  height: 0px;
+  border: 20px solid transparent;
+}
+
+.ant {
+  position: absolute;
+  z-index: 10000;
+  top: 45vh;
+  left: 1vw;
+  border-right: 20px solid rgba(255, 255, 255, 0.8);
+}
+
+.sig {
+  position: absolute;
+  z-index: 10000;
+  top: 45vh;
+  right: 1vw;
+  border-left: 20px solid rgba(255, 255, 255, 0.8);
+}
+
+.ant:hover {
+  border-right: 20px solid rgba(255, 0, 0, 0.8);
+}
+
+.sig:hover {
+  border-left: 20px solid rgba(255, 0, 0, 0.8);
+}
+
+.card-container .card-deck {
+  margin: 10px auto;
+}
+
+.background-carousel {
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(240, 248, 255, 0)));
+  background-image: linear-gradient(to top, black, rgba(240, 248, 255, 0));
+  position: absolute;
+}
+
+.cards__photographers .cardTitle {
+  margin: 20px 0px;
+}
+
+.cards__photographers .row {
+  margin: 0 -5px;
+}
+
+.column {
+  float: left;
+  width: 30vw;
+  margin: 0 auto;
+}
+
+.column .card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  height: 400px;
+  position: relative;
+}
+
+.column .card__subtitle {
+  font-weight: 500;
+  font-size: small;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.column .card__subSection {
+  margin: 0;
+  position: absolute;
+  bottom: 10px;
+  width: 89%;
+}
+
+.column .card__subSection .card__social a {
+  font-size: 18px;
+  border: none;
+}
+
+.column .card__subSection .button, .column .card__subSection .buttonCancel, .column .card__subSection .buttonSecondary, .column .card__subSection .buttonWhite {
+  width: 100%;
+}
+
+.column .card__subSection .card__dates {
+  font-size: x-small;
+}
+
+@media screen and (max-width: 496px) {
+  .card__description {
+    display: none;
+  }
+  .carousel .h3 {
+    display: none;
+  }
+  .carousel .button, .carousel .buttonCancel, .carousel .buttonSecondary, .carousel .buttonWhite {
+    display: none;
+  }
+  .card__text {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 646px) {
+  .column .card {
+    height: 100px;
+    position: relative;
+  }
+  .column .card__name {
+    font-size: 25px;
+  }
+  .column .card__description {
+    font-size: small;
+  }
+  .column .card__subSection {
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .column {
+    width: 70%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .column .card {
+    height: 300px;
+    position: relative;
+  }
+  .column .card__subSection {
+    position: absolute;
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel .h3 {
+    display: none;
+  }
+  .carousel .button, .carousel .buttonCancel, .carousel .buttonSecondary, .carousel .buttonWhite {
+    display: none;
+  }
+  .cardContainer .card {
+    border: none;
+  }
+  .cardContainer .card .card-title {
+    color: aliceblue;
+    padding-bottom: 1vh;
+  }
+  .cardContainer .card .buttonSecondary {
+    position: absolute;
+    width: 60vw;
+    right: 10%;
+  }
+  .col a {
+    display: none;
+  }
+  .item {
+    width: 95vw;
+  }
+  .footer__copyright {
+    display: none;
+  }
+}
+
+@media (min-width: 401px) {
+  .col a {
+    font-size: 12px;
+  }
+  .background {
+    width: 100vw;
+    background-image: url("https://cdn0.bodas.net/vendor/79218/3_2/960/jpg/postbodayasoc-1-5_1_79218.jpeg");
+    background-size: cover;
+  }
+  form {
+    width: 70%;
+    margin: auto;
+    background-color: #15171aa6;
+    color: aliceblue;
+  }
+  form .button, form .buttonCancel, form .buttonSecondary, form .buttonWhite {
+    -webkit-box-shadow: 6px 6px 12px #70707086, -6px -6px 12px #3b3b3b91;
+            box-shadow: 6px 6px 12px #70707086, -6px -6px 12px #3b3b3b91;
+  }
+}
+
+@media (min-width: 768px) {
+  .background {
+    width: 100vw;
+    background-image: url("http://www.serendipity-fotografia.com/wp-content/uploads/2015/03/BodaRoci%CC%81oDani-264.jpg");
+    background-size: cover;
+  }
+  form {
+    width: 46vw;
+    margin-right: 40vw;
+    margin-left: 5vw;
+    color: aliceblue;
+  }
+  form .button, form .buttonCancel, form .buttonSecondary, form .buttonWhite {
+    -webkit-box-shadow: 6px 6px 12px #70707086, -6px -6px 12px #3b3b3b91;
+            box-shadow: 6px 6px 12px #70707086, -6px -6px 12px #3b3b3b91;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
